@@ -74,7 +74,7 @@ def post_to_api(invoke_url, record):
         ]
     }, default=str)
     headers = {'Content-Type': 'application/vnd.kafka.json.v2+json'}
-    print(payload)
+    # print(payload)
     response = requests.request("POST", invoke_url, headers=headers, data=payload)
     print(response.status_code)
 
